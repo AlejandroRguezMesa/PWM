@@ -1,0 +1,17 @@
+
+.notification {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.client_id{
+    margin-left: 10px;
+}
+
+.client_card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 5px;
+    padding: 20px 5px;
+    max-width: 600px;
+}
