@@ -15,3 +15,40 @@
     padding: 20px 5px;
     max-width: 600px;
 }
+.nutritionist_card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 5px;
+    padding: 20px 5px;
+    max-width: 700px;
+}
+.tags {
+    display: flex;
+}
+.tag {
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 0 2px;
+
+}
+.name {
+    font-size: 20px;
+    margin:10px;
+}
+.description {
+    font-size: small;
+}
+
+.location_price_contact {
+    padding: 30px;
+}
+.user_photo {
+    padding-right: 15px;
+}
+.divider {
+    border: none;
+    border-left: 1.5px solid black;
+    height: 150px;
+    margin-right: 2.5px;
+}
