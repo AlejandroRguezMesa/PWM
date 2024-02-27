@@ -128,3 +128,16 @@ Client card
     margin-right: 2.5px;
 }
 
+/*Navbar header*/
+
+header nav{
+    display: flex;
+
+    .logo-container{
+        width: 250px;
+        & img{
+            width: 100%;
+        }
+    }
+}
+
