@@ -1,0 +1,130 @@
+
+
+
+/*Contacto*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #afbe8f;
+}
+
+header {
+    background-color: #3f6634;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+
+/*
+Footer
+*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+.social-icons {
+    margin-top: 10px;
+    text-align: center; /* Centra los elementos */
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 20px; /* Cambia el ancho de las imágenes */
+    height: 20px; /* Cambia la altura de las imágenes */
+    line-height: 20px; /* Ajusta la línea de altura para centrar verticalmente */
+    margin: 0 5px;
+
+}
+.logo {
+    width: 20px; /* Cambia este valor al tamaño deseado */
+}
+
+
+/*
+
+Client card
+
+ */
+.notification {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.client_id{
+    margin-left: 10px;
+}
+
+.client_card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 5px;
+    padding: 20px 5px;
+    max-width: 600px;
+}
+.nutritionist_card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 5px;
+    padding: 20px 5px;
+    max-width: 700px;
+}
+.tags {
+    display: flex;
+}
+.tag {
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 0 2px;
+
+}
+.name {
+    font-size: 20px;
+    margin:10px;
+}
+.description {
+    font-size: small;
+}
+
+.location_price_contact {
+    padding: 30px;
+}
+.user_photo {
+    padding-right: 15px;
+}
+.divider {
+    border: none;
+    border-left: 1.5px solid black;
+    height: 150px;
+    margin-right: 2.5px;
+}
+
