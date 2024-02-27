@@ -7,11 +7,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #afbe8f;
+    background-color: #F3F8EA;
 }
 
 header {
-    background-color: #3f6634;
     padding: 20px;
     text-align: center;
 }
@@ -89,23 +88,37 @@ Client card
     border-radius: 5px;
     padding: 20px 5px;
     max-width: 600px;
+    background-color: #DDE392;
+}
+
+.nutritionist_image {
+    align-self: center;
 }
 .nutritionist_card {
-    display: flex;
     align-items: center;
     box-shadow: 0px 0px 4px 1px;
     border-radius: 5px;
     padding: 20px 5px;
     max-width: 700px;
+    background-color: #DDE392;
 }
+
 .tags {
     display: flex;
+    max-width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 .tag {
     padding: 5px;
     margin: 5px;
     box-shadow: 0px 0px 0 2px;
+    background-color: #3F6634;
 
+}
+.main-nutritionist-card {
+     display: flex;
 }
 .name {
     font-size: 20px;
