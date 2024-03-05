@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/public/nutritional_calendar_styles.css" />
+  <title>Calendario Nutricional</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+          <div class="calendar_configuration">
+              <button class="configuration_menu" id="configuration_menu">&#8942</button>
+              <div id="dropdown" class="dropdown-content" style="display:none;">
+                <button id="weekly-option">Weekly</button>
+            </div>
+            </div>
+            <div class="calendar__info">
+               <div class="calendar__prev" id="prev-month">&#9664;</div>
+               <div class="calendar__month" id="month"></div>
+               <div class="calendar__year" id="year"></div>
+               <div class="calendar__next" id="next-month">&#9654;</div>
+           </div>
+               <div class="calendar__week">
+               <div class="calendar__day calendar__item">LUN</div>
+               <div class="calendar__day calendar__item">MAR</div>
+               <div class="calendar__day calendar__item">MIE</div>
+               <div class="calendar__day calendar__item">JUE</div>
+               <div class="calendar__day calendar__item">VIE</div>
+               <div class="calendar__day calendar__item">SAB</div>
+               <div class="calendar__day calendar__item">DOM</div>
+               </div>
+               <div class="calendar__dates" id="dates">
+               </div>
+               <div class="day_note">
+                <div class="text-area">
+                  <textarea placeholder="Indica al nutricionista lo que quieras sobre este día" class="item_day_note"></textarea>
+                </div>
+                <div class="send-day-note-btn">
+                    <button class="send_day_note" id="send_day_note">enviar</button>
+                </div>
+                <div class="close-day-note-btn">
+                <button class="close_day_note" id="close_day_note">❌</button>
+                </div>
+            </div>  
+               <div class="title" id="calendartittle">Calendario Nutricional</div>
+       
+          </div>
+        <div class="rightcontainer">
+
+          <div class="rightadd">
+          <div class="today-date">
+            <div class="dish-date">X de mes 20XX</div>
+            <div class="dish-day">DiaSemana</div>
+          </div>
+          <div class="dishes">
+            <div class="dishinfo">
+              <div class="add-note-btn">
+              <button class="noteemoji" id="note">📝</button>
+              </div>
+                <div class="dialog">
+                  <div class="text-area">
+                    <textarea placeholder="Indica o aclara al cliente lo que desees acerca del plato" class="nutricionist_note"></textarea>
+                  </div>
+                  <div class="send_btn">
+                  <button class="send_note" id="send">enviar</button>
+                  </div>
+                  <div class="close-dialog-btn">
+                  <button class="closedialog" id="closedialog">❌</button>
+                  </div>
+                </div>
+            <div class="titledish">
+              <i class="punto" id="point">&#x25CF;</div></i>
+              <h3 class="dish-title" id="dish-title">Ejemplo plato
+                <div class="right-nutritional-data">
+                <p class="protein" id="protein">Proteinas: </p>
+                <p class="grasas" id="grasas">Grasas Totales: </p>
+                <p class="grasas-saturadas" id="grasas-saturadas">&emsp; Saturadas: </p>
+                <p class="carbohydrates" id="carbohydrates">Carbohidratos: </p>
+                <p class="sugars" id="sugars">Azúcares: </p>
+                <p class="sodium" id="sodium">Sodio: </p>
+                <p class="dietary-fibre" id="dietaryfibre">Fibra: </p>
+                </div>
+              </h3>
+          </div>
+        </div>
+          </div>
+
+          <div class="right-dish-form">
+            <div class="add-dish-footer">
+            <button class="cancel-btn" id="cancel">Cancelar</button>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+<script src="/public/js/client_calendar.js"></script>
+</body>
+</html>
