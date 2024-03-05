@@ -1,7 +1,25 @@
-
+/*Fuentes*/
+.roboto-slab-<uniquifier> {
+                  font-family: "Roboto Slab", serif;
+                  font-optical-sizing: auto;
+                  font-weight: <weight>;
+                  font-style: normal;
+}
 
 
 /*Contacto*/
+*{
+    font-family: Roboto Slab !important;
+    & a{ /* Directamente por debajo a y button */
+        text-decoration: none;
+        color: black;
+    }
+}
+
+i {
+    font-family: 'FontAwesome', sans-serif !important;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -13,6 +31,7 @@ body {
 header {
     padding: 20px;
     text-align: center;
+    box-shadow: 1px 1px 2px #333333;
 }
 
 h1 {
@@ -152,6 +171,61 @@ header nav{
             width: 100%;
         }
     }
+
+    .link-container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+
+        & a{ /* Directamente por debajo a y button */
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+          }
+        & button{
+            margin-left: 20px;
+            background: #3f6634;
+            color: white;
+            border: 1px solid #3f6634;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 1.2em;
+            cursor: pointer;
+
+
+            &:hover{
+                background: white;
+                color: #3f6634;
+
+             }
+          }
+    }
+}
+
+main{
+    .main-inner {
+
+        .image-container {
+            max-width: 600px;
+
+            & img {
+                width: 100%;
+            }
+
+        }
+
+        .text-container{
+
+            .button-container{
+                .regular-link{
+                    font-size: 1.2em;
+                    color: #3f6634;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
 }
 
 /*Filter*/
@@ -179,3 +253,21 @@ header nav{
 
 }
 
+
+.clasic-button{
+    margin-left: 20px;
+    background: #3f6634;
+    color: white;
+    border: 1px solid #3f6634;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+
+&:hover{
+     background: white;
+     color: #3f6634;
+
+ }
+}
