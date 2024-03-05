@@ -1,4 +1,5 @@
 # PWM
 
-npm install
+npm install 
+
 node ./app.js
