@@ -15,8 +15,6 @@ async function loadTemplates(){
         let body = await template.text();
 
         obj.outerHTML = body;
-
-        console.log(body);
     }
 
 }

@@ -362,7 +362,8 @@ header nav{
     }
 }
 
-main{
+
+.index-page main{
     flex: 1;
     & h2{
         text-align: center;
@@ -376,18 +377,32 @@ main{
         justify-content: space-evenly;
 
         .image-container {
+            margin: 0 0 0 0;
+            position: relative;
             max-width: 800px;
             flex: 1 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             & img {
                 width: 100%;
+                position: relative;
+                border: none;
+                border-radius: 0;
             }
 
         }
 
         .text-container{
+            position: relative;
             flex: 1 0 0;
             padding: 50px;
+            margin: 0;
+            text-align: unset;
+
+
             & h1{
                 font-size: 5em;
             }
