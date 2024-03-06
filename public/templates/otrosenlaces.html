@@ -2,16 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/template-loader.js" ></script>
+    <link rel="stylesheet" href="/styles.css" />
     <title>Otros Enlaces</title>
-    <link rel="stylesheet" href="otrosenlaces.css">
+  
 </head>
+
+
 <body>
-    <header>
-        <h1>Otros Enlaces</h1>
-    </header>
-    <main>
-        <p>Otros enlaces de interés: LOREM IPSUM</p>
-    </main>
+
+<header load-from-file="/templates/header.html"></header>
+<div class="otrosenlaces_content">
+
+<div class="otrosenlaces_header">
+    <h1>Otros Enlaces</h1>
+</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula lacus non justo luctus auctor. Aliquam quis pharetra nisi, id venenatis libero. Nam sit amet ipsum quis nunc convallis dictum. Cras laoreet magna nec lacus bibendum, vitae tincidunt sem fermentum.</p>
+
+
+<div class="otrosenlaces_images">
+    <div class="otrosenlaces_image">
+        <img src="/resources/privacidad_imagen.jpg" alt="Imagen 1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="otrosenlaces_image">
+        <img src="/resources/privacidad_imagen.jpg" alt="Imagen 2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="otrosenlaces_image">
+        <img src="/resources/privacidad_imagen.jpg" alt="Imagen 3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+</div>
+<footer load-from-file="/templates/footer.html"></footer>
+<script>
+    loadTemplates();
+</script>
 </body>
 </html>

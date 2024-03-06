@@ -2,11 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <script src="/template-loader.js" ></script>
     <link rel="stylesheet" href="/styles.css" />
     <title>Sobre Nosotros</title>
   
 </head>
 <body>
+    <header load-from-file="/templates/header.html"></header>
     <div class="video-container">
         <video autoplay loop muted class="video-background">
             <source src="/resources/sobrenosotros_video_prueba.mp4" type="video/mp4"> <!-- Ruta del video -->
@@ -48,10 +50,14 @@
     </div>
 <div class="sobrenosotros_end">
         <div class="sobrenosotros_end_header"><h1>Únete a Nosotros</h1></div>
-        <button class="sobrenosotros_register" >Regístrate ya</button>
+        <button class="sobrenosotros_register" onclick="window.location.href='/templates/register.html'">Regístrate ya</button>
     
     </div>
 
 </div>
+<script>
+    loadTemplates();
+</script>
+
 </body>
 </html>

@@ -129,7 +129,7 @@ body {
 .content {
     position: relative;
     width: 100%;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -185,7 +185,7 @@ body {
     position: relative;
     display: flex;
     margin:30px;
-    padding-bottom: 350px;
+    padding-bottom: 370px;
 }
 .down_container_header{
     position: absolute;
@@ -220,7 +220,8 @@ body {
 }
 
 .sobrenosotros_end {
-    position: relative; /* Cambiar de fixed a relative */
+    position: fixed;
+    bottom: 0;
     background-color: rgba(12, 99, 22, 0.8);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -243,6 +244,110 @@ body {
     cursor:pointer;
     background-color: rgb(79, 78, 78);;
 }
+
+
+
+/*
+
+Otrosenlaces
+
+ */
+.otrosenlaces_content {
+    position: relative;
+    padding: 20px;
+}
+
+.otrosenlaces_header { 
+    color: #3f6634;
+    z-index: 1;
+    background-color: rgba(47, 72, 42, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    border: solid rgba(0, 0, 0, 0.2);
+}
+
+.otrosenlaces_header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.otrosenlaces_header p {
+    width: 80%;
+    margin-bottom: 20px;
+    
+}
+
+.otrosenlaces_images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.otrosenlaces_image {
+    flex: 0 1 30%;
+}
+
+.otrosenlaces_image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.otrosenlaces_image p {
+    text-align: justify;
+}
+/* Terminos */
+
+.terminos_container {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e3e3e3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    border-radius: 20px;
+    
+}
+
+.terminos_container h1 {
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    color: #333;
+    background-color: #3f6634;
+    padding: 20px; 
+    margin-top: 0;  
+    position: absolute;  
+    top: 0;  
+    left: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.terminos  {
+    margin-top: 80px;
+
+}
+
+.terminos h2 {
+    color: #3f6634; 
+    font-size: 1.6em; 
+    border-bottom: 2px solid #3f6634; 
+    padding-bottom: 5px; 
+}
+
+.terminos p {
+    line-height: 1.8;
+    font-size: 1.1em; 
+
+    color: black;
+    text-align: justify;
+}
+
+.terminos_footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+}
+
 
 
 

@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/template-loader.js" ></script>
+    <link rel="stylesheet" href="/styles.css" />
     <title>Términos y Condiciones</title>
-    <link rel="stylesheet" href="terminos.css">
+
 </head>
 <body>
-    <header>
+    <header load-from-file="/templates/header.html"></header>
+    <div class="terminos_container">
         <h1>Términos y Condiciones</h1>
-    </header>
-    <main>
-        <p>Terminos y condicioness: 
-            Lorem Ipsum
-         </p>
-    </main>
+        <div class="terminos">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at sapien non urna commodo accumsan. Donec nec massa eu lacus venenatis rutrum. Vivamus ut sodales justo. Nullam tempor arcu eget justo accumsan, sit amet consectetur ipsum consequatconsectetur adipiscing elit. Sed at sapien non urna commodo accumsan. Donec nec massa eu lacus venenatis rutrum. Vivamus ut sodales justo. Nullam tempor arcu eget justo accumsan, sit amet consectetur ipsum consequat.</p>
+        <h2>Lorem Ipsum</h2>
+        <p>Integer sit amet sapien a ligula tincidunt vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sit amet suscipit lorem. Phasellus euismod massa vel elit placerat vestibulum.</p>
+        <h2>Lorem Ipsum</h2>
+        <p>Proin scelerisque turpis sed mauris venenatis, at dapibus elit mattis. Vestibulum id odio ac urna lacinia condimentum et id nunc. Duis semper eros eget magna ultrices, sed tristique metus vestibulumconsectetur adipiscing elit. Sed at sapien non urna commodo accumsan. Donec nec massa eu lacus venenatis rutrum. Vivamus ut sodales justo. Nullam tempor arcu eget justo accumsan, sit amet consectetur ipsum consequat.</p>
+        <h2>Lorem Ipsum</h2>   
+        <p>Proin scelerisque turpis sed mauris venenatis, at dapibus elit mattis. Vestibulum id odio ac urna lacinia condimentum et id nunc. Duis semper eros eget magna ultrices, sed tristique metus vestibulum.</p>
+        <h2>Lorem Ipsum</h2>
+        <p>Proin scelerisqueconsectetur adipiscing elit. Sed at sapien non urna commodo accumsan. Donec nec massa eu lacus venenatis rutrum. Vivamus ut sodales justo. Nullam tempor arcu eget justo accumsan, sit amet consectetur ipsum consequat turpis sed mauris venenatis, at dapibus elit mattis. Vestibulum id odio ac urna lacinia condimentum et id nunc. Duis semper eros eget magna ultrices, sed tristique metus vestibulum.</p>
+    </div>
+    </div>
+
+    <div class="terminos_footer">
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+    </div>
+    <footer load-from-file="/templates/footer.html"></footer>
+    <script>
+        loadTemplates();
+    </script>
+
 </body>
 </html>
