@@ -1,15 +1,4 @@
  /* Nutritional Calendar */
- body {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
-    background-color: hsl(79, 27%, 65%);
-  }
-
-
   .container {
     position: relative;
     width: 1200px;
