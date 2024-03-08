@@ -306,12 +306,7 @@ Otrosenlaces
 }
 
 .otrosenlaces_header { 
-    color: #3f6634;
-    z-index: 1;
-    background-color: rgba(47, 72, 42, 0.5);
-    border-radius: 10px;
-    padding: 20px;
-    border: solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
 
 .otrosenlaces_header h1 {
@@ -350,7 +345,7 @@ Otrosenlaces
     width: 70%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #e3e3e3;
+    background-color: #d1cfcf;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative; 
     border-radius: 20px;
@@ -786,6 +781,49 @@ header nav{
         }
     }
 
+}
+/* FAQ */
+.faq_header {
+    width: 90%;
+    margin:auto;
+    margin-top: 20px;
+
+}
+
+.faq_header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.faq_quest p{
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+}
+.faq_one, .faq_two, .faq_three, .faq_four{
+    display: flex;
+    width: 80%;
+    background-color: #d1cece;
+    margin: auto;
+    border:2px solid rgb(151, 148, 148);
+    margin-bottom:20px;
+}
+
+
+.faq_one p, .faq_two p, .faq_three p, .faq_four p{
+    margin-left: 10px;
+    flex: 0 0 93%;
+    text-align: justify;
+
+}
+
+.faq_one button, .faq_two button, .faq_three button, .faq_four button{
+    flex: 0 0 7%;
+    margin: auto;
+    background-color:transparent;
+    font-size: 1.8em;
+    border:none;
 }
 
 
