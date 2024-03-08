@@ -14,6 +14,7 @@
 </head>
 <body>
     <header load-from-file="/templates/header.html"></header>
+    <main class="main-sobrenosotros">
     <div class="video-container">
         <video autoplay loop muted class="video-background">
             <source src="/resources/sobrenosotros_video_prueba.mp4" type="video/mp4"> <!-- Ruta del video -->
@@ -46,20 +47,19 @@
     <div class="down_container_header"><h1> Lorem Ipsum</h1></div>
     <div class="image-container">
         <img src="/resources/sobrenosotros_down_imagen.jpg">
-    </div> 
+    </div>
     <div class="text-container">
-    <p>Estamos creando Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, elementum in odio quis, rutrum vulputate nisl. Aliquam lobortis velit felis. Proin eleifend lectus eget dui viverra pulvinar. Aenean scelerisque consectetur tellus, ut consectetur velit hendrerit sed. Pellentesque lorem magna, fringilla ac aliquam id, tristique non nunc. Suspendisse a tempus tortor. Donec egestas lectus eu velit blandit dictum. Vivamus lectus felis, egestas vel gravida vitae, tincidunt vel mi. 
+    <p>Estamos creando Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, elementum in odio quis, rutrum vulputate nisl. Aliquam lobortis velit felis. Proin eleifend lectus eget dui viverra pulvinar. Aenean scelerisque consectetur tellus, ut consectetur velit hendrerit sed. Pellentesque lorem magna, fringilla ac aliquam id, tristique non nunc. Suspendisse a tempus tortor. Donec egestas lectus eu velit blandit dictum. Vivamus lectus felis, egestas vel gravida vitae, tincidunt vel mi.
         Vestibulum dignissim massa velit, in vestibulum aug.</p>
     </div>
 
     </div>
-<div class="sobrenosotros_end">
-        <div class="sobrenosotros_end_header"><h1>Únete a Nosotros</h1></div>
-        <button class="sobrenosotros_register" onclick="window.location.href='/templates/register.html'">Regístrate ya</button>
-    
-    </div>
+
+
+    </main>
     <div load-from-file="templates/login.html"></div>
 </div>
+    <footer load-from-file="templates/footer.html"></footer>
 <script>
     loadTemplates();
 </script>

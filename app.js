@@ -10,7 +10,10 @@ const pages = { //Aquí se delcaran las paginas de la web: "url":"ubicacion-arch
     "/register": "/pages/register.html",
     "/client-calendar":"/pages/client_calendar.html",
     "/client-list":"/pages/client_list.html",
-    "/nutritionist-list":"/pages/nutritionist_list.html"
+    "/faq":"/pages/faq.html",
+    "/otros-enlaces":"/pages/otrosenlaces.html",
+    "/terminos":"/pages/terminos.html",
+    "/contacto":"/pages/contacto.html"
 
 }
 
@@ -42,6 +45,19 @@ app.get("/register", (req, res) => {
 
 app.get("/nutritionist-list", (req, res) => {
     res.sendFile(path.join(__dirname, pages["/nutritionist-list"]))
+});
+
+app.get("/faq", (req, res) => {
+    res.sendFile(path.join(__dirname, pages["/faq"]))
+});
+app.get("/otros-enlaces", (req, res) => {
+    res.sendFile(path.join(__dirname, pages["/otros-enlaces"]))
+});
+app.get("/terminos", (req, res) => {
+    res.sendFile(path.join(__dirname, pages["/terminos"]))
+});
+app.get("/contacto", (req, res) => {
+    res.sendFile(path.join(__dirname, pages["/contacto"]))
 });
 
 app.listen(port, () => {

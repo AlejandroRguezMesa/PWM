@@ -7,10 +7,6 @@
 }
 
 
-
-
-
-/*Contacto*/
 *{
     font-family: Roboto Slab !important;
     & a{ /* Directamente por debajo a y button */
@@ -50,6 +46,7 @@ h1 {
 
 main {
     padding: 10px;
+    flex:1;
 }
 
 p {
@@ -220,13 +217,13 @@ body {
 .image-container {
     display:flex;
     margin-top: 20px;
-    max-width: 600px;
+    max-width: 770px;
+;
 }
 .down-container {
     position: relative;
     display: flex;
     margin:30px;
-    padding-bottom: 370px;
 }
 .down_container_header{
     position: absolute;
@@ -240,8 +237,7 @@ body {
 }
 
 .image-container img {
-    position: absolute;
-    width: 40%;
+    width: 100%;
     border:solid black;
     border-radius: 0 10px 0 10px;
 }
@@ -903,4 +899,7 @@ header nav{
     .social_media{
         margin-right: 5px;
     }
+}
+.main-sobrenosotros{
+    padding: 0;
 }
