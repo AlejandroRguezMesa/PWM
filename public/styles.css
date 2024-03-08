@@ -716,16 +716,16 @@ header nav{
         align-items: center;
         margin-bottom: 20px;
 
-        form{
+        & form{
             display: flex;
             flex-direction: column;
             width: 60%;
 
-            label{
+            & label{
                 margin-bottom: 5px;
             }
 
-            input, textarea{
+            & input, textarea{
                 margin-bottom: 10px;
                 border: none;
                 box-shadow: 2px 2px 2px 0px #8080805e;
@@ -733,7 +733,7 @@ header nav{
                 border-radius: 3px;
             }
 
-            textarea{
+            & textarea{
                 height: 80px;
                 resize: none;
             }
@@ -787,6 +787,8 @@ header nav{
     }
 
 }
+
+
 .client_list-page{
 
     display: flex;
