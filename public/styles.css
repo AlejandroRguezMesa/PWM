@@ -703,3 +703,20 @@ header nav{
 
  }
 }
+
+.client_list-page{
+
+    display: flex;
+
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .card-listClient{
+        padding: 20px;
+    }
+}

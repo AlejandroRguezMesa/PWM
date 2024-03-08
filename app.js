@@ -6,7 +6,9 @@ const port = 8080
 const pages = { //Aquí se delcaran las paginas de la web: "url":"ubicacion-archivo.html"
     "/":"/pages/index.html",
     "/sobre-nosotros":"/pages/sobrenosotros.html",
-    "/client-calendar":"/pages/client_calendar.html"
+    "/client-calendar":"/pages/client_calendar.html",
+    "/client-list":"/pages/client_list.html"
+
 }
 
 app.use(express.static('public'))
@@ -24,6 +26,9 @@ app.get("/client-calendar", (req, res) => {
     res.sendFile(path.join(__dirname, pages["/client-calendar"]))
 });
 
+app.get("/client-list", (req, res) => {
+    res.sendFile(path.join(__dirname, pages["/client-list"]))
+});
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
