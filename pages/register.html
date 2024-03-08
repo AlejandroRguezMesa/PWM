@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PWM</title>
+    <script src="template-loader.js" ></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body class="index-page">
+
+<header load-from-file="templates/header.html"></header>
+
+<main class="register-page">
+    <div class="form-register-container">
+        <h2>Registro</h2>
+        <div class="dual-option">
+            <span class="selected">Cliente</span>
+            <span>Nutricionista</span>
+        </div>
+        <form>
+            <label>E-mail</label>
+            <input type="text"/>
+            <label>Nombre</label>
+            <input type="text"/>
+            <label>Apellidos</label>
+            <input type="text"/>
+            <label>Fecha de nacimiento</label>
+            <input type="text"/>
+            <label>Alergias, intoleracncias, patologias</label>
+            <textarea type="text" ></textarea>
+            <label>Preferencias alimenticias</label>
+            <textarea type="text" ></textarea>
+            <div class="button-container">
+                <button class="clasic-button">Register</button>
+                <span class="regular-link">Si ya estás registrado, inicia sesion</span>
+            </div>
+
+        </form>
+    </div>
+    <div class="image-register">
+        <img src="/resources/register.jpg">
+    </div>
+</main>
+
+<div class="flotante login">
+    <span class="title-login">Login</span>
+    <div class="form-login">
+        <label><i class="fa fa-user"></i> Usuario:</label>
+        <input type="text" name="user">
+        <label><i class="fa fa-lock"></i>Contraseña:</label>
+        <input type="password" name="user">
+        <div class="button-container">
+            <button class="clasic-button">Login</button>
+            <button class="clasic-button inverted">Register</button>
+        </div>
+    </div>
+</div>
+
+<footer load-from-file="templates/footer.html"></footer>
+<script>
+    loadTemplates();
+</script>
+<script src="js/utils.js"></script>
+</body>
+</html>

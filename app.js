@@ -6,6 +6,8 @@ const port = 8080
 const pages = { //Aquí se delcaran las paginas de la web: "url":"ubicacion-archivo.html"
     "/":"/pages/index.html",
     "/sobre-nosotros":"/pages/sobrenosotros.html",
+    "/nutritionist-calendar" : "/pages/nutritionist_calendar.html",
+    "/register": "/pages/register.html",
     "/client-calendar":"/pages/client_calendar.html",
     "/client-list":"/pages/client_list.html"
 
@@ -28,6 +30,13 @@ app.get("/client-calendar", (req, res) => {
 
 app.get("/client-list", (req, res) => {
     res.sendFile(path.join(__dirname, pages["/client-list"]))
+});
+app.get("/nutritionist-calendar", (req, res) => {
+    res.sendFile(path.join(__dirname, pages["/nutritionist-calendar"]))
+});
+
+app.get("/register", (req, res) => {
+    res.sendFile(path.join(__dirname, pages["/register"]))
 });
 
 app.listen(port, () => {

@@ -147,7 +147,7 @@ footer a:hover {
 /*SobreNosotros*/
 
 body {
-    background-color: #afbe8f;
+    background-color: #F3F8EA;
 }
 .video-container {
     position: relative;
@@ -704,6 +704,89 @@ header nav{
  }
 }
 
+.register-page{
+    padding: 2px;
+    display: flex;
+
+
+    .form-register-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+            label{
+                margin-bottom: 5px;
+            }
+
+            input, textarea{
+                margin-bottom: 10px;
+                border: none;
+                box-shadow: 2px 2px 2px 0px #8080805e;
+                height: 30px;
+                border-radius: 3px;
+            }
+
+            textarea{
+                height: 80px;
+                resize: none;
+            }
+
+            .button-container{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .clasic-button{
+                    margin: 10px 0;
+                }
+            }
+
+
+        }
+
+        .dual-option{
+            display: flex;
+            /* padding: 10px; */
+            background: white;
+            width: fit-content;
+            border-radius: 10px;
+
+            & span{
+                padding: 10px;
+                border-radius: 10px;
+                min-width: 100px;
+                text-align: center;
+                color: #3f6634;
+                cursor: pointer;
+
+                &.selected{
+                    background: #3f6634;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .image-register{
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fdf7d3;
+
+        & img{
+            width: 100%;
+        }
+    }
+
+}
 .client_list-page{
 
     display: flex;
