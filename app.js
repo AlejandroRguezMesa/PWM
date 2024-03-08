@@ -13,8 +13,8 @@ const pages = { //Aquí se delcaran las paginas de la web: "url":"ubicacion-arch
     "/faq":"/pages/faq.html",
     "/otros-enlaces":"/pages/otrosenlaces.html",
     "/terminos":"/pages/terminos.html",
-    "/contacto":"/pages/contacto.html"
-
+    "/contacto":"/pages/contacto.html",
+    "/nutritionist-list":"/pages/nutritionist_list.html"
 }
 
 app.use(express.static('public'))
