@@ -782,3 +782,46 @@ header nav{
     }
 
 }
+/* FAQ */
+.faq_header { 
+    width: 90%;
+    margin:auto;
+    margin-top: 20px;
+
+}
+
+.faq_header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.faq_quest p{
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+}
+.faq_one, .faq_two, .faq_three, .faq_four{
+    display: flex;
+    width: 80%;
+    background-color: #d1cece;
+    margin: auto;
+    border:2px solid rgb(151, 148, 148);
+    margin-bottom:20px;
+}
+
+
+.faq_one p, .faq_two p, .faq_three p, .faq_four p{
+    margin-left: 10px;
+    flex: 0 0 93%;
+    text-align: justify;
+    
+}
+
+.faq_one button, .faq_two button, .faq_three button, .faq_four button{
+    flex: 0 0 7%;
+    margin: auto;
+    background-color:transparent;
+    font-size: 1.8em;
+    border:none;
+}
