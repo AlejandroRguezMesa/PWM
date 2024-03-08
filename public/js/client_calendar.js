@@ -101,6 +101,7 @@ const send_dialogF = () => {
 const close_dialogF = () => {
     dishesElement.style.backgroundColor = '';
     const dialogElement = document.querySelector('.dialog'); 
+    dialogElement.style.display = 'none';
 }
 
 const send_day_noteF = () => {

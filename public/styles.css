@@ -99,14 +99,7 @@ footer a:hover {
 
 /*Contacto*/
 
-.contacto_header {
-    color: #3f6634;
-    z-index: 1;
-    background-color: rgba(47, 72, 42, 0.5);
-    border-radius: 10px;
-    padding: 20px;
-    border: solid rgba(0, 0, 0, 0.2);
-}
+
 
 .contacto_header h1 {
     text-align: center;
@@ -305,9 +298,6 @@ Otrosenlaces
     padding: 20px;
 }
 
-.otrosenlaces_header { 
-    padding: 10px;
-}
 
 .otrosenlaces_header h1 {
     text-align: center;
@@ -789,21 +779,19 @@ header nav{
 }
 /* FAQ */
 .faq_header {
-    width: 90%;
-    margin:auto;
-    margin-top: 20px;
+
+    padding-top: 20px;
 
 }
 
 .faq_header h1 {
     text-align: center;
-    margin-bottom: 10px;
-}
 
+}
 
 .faq_quest p{
     width: 80%;
-    padding: 30px;
+    padding: 20px;
     margin: auto;
 }
 .faq_one, .faq_two, .faq_three, .faq_four{
