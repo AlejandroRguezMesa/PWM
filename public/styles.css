@@ -711,6 +711,11 @@ header nav{
         align-items: center;
         margin-bottom: 20px;
 
+        & h2{
+            font-style: normal;
+            color: #3f6634;
+        }
+
         & form{
             display: flex;
             flex-direction: column;
@@ -770,7 +775,7 @@ header nav{
     }
 
     .image-register{
-        max-width: 800px;
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
