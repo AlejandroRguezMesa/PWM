@@ -416,7 +416,8 @@ Client card
     box-shadow: 0px 0px 4px 1px;
     border-radius: 5px;
     padding: 20px 5px;
-    max-width: 700px;
+    min-width: 875px;
+    max-width: 1000px;
     background-color: #DDE392;
 }
 
@@ -629,10 +630,8 @@ header nav{
 /*Filters*/
 
 .filter-nutritionist{
-    display: block;
-    max-width: 200px;
-    margin-left: 50px;
-    margin-bottom: 20px;
+
+
 }
 
 .filter-client {
@@ -870,4 +869,38 @@ header nav{
     flex-direction: column;
     margin-left: 50px;
 
+}
+.nutritionist_list-page {
+
+    display: flex;
+
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        flex: 3;
+        justify-content: center;
+    }
+
+    .card-listNutritionist{
+        padding: 20px;
+    }
+
+    .filter-listNutritionist{
+
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+    }
+
+    input {
+        margin:10px;
+    }
+    .combine-filter-nutritionist{
+        margin-left: 50px;
+    }
+    .social_media{
+        margin-right: 5px;
+    }
 }
