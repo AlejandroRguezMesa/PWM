@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista nutricionistas</title>
     <script src="template-loader.js" ></script>
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +15,13 @@
 <body>
 <header load-from-file="templates/header.html"></header>
 <main class="nutritionist_list-page">
+    <div id="mySidepanel" class="sidepanel">
+        <div class="combine-filter-nutritionist">
+            <div load-from-file="templates/filter.html"></div>
+            <div load-from-file="templates/filternutritionist.html"></div>
+        </div>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
     <div class="filter-listNutritionist">
         <div class="combine-filter-nutritionist">
             <div load-from-file="templates/filter.html"></div>
@@ -40,6 +48,21 @@
 <footer load-from-file="templates/footer.html"></footer>
 <script>
     loadTemplates();
+
+
+        let filterShowed;
+    function openNav() {
+
+        if (filterShowed) {
+            document.getElementById("mySidepanel").style.width = "250px";
+            filterShowed = false;
+        } else {
+            document.getElementById("mySidepanel").style.width = "0";
+            filterShowed = true;
+        }
+    }
+
+
 </script>
 </body>
 </html>
