@@ -1,12 +1,12 @@
 <div class="filter-nutritionist">
     <hr class="filter-divider">
-    <div class="specialization-filter">
-        <p class="text-filter">Especialización <i class="fa-solid fa-minus"></i></p>
+    <div class="specialization-filter filter-parent-type" name="specialization-parent" onclick="openDescription('specialization-filter','Especializacion')">
+        <p id="Especializacion" class="text-filter" name="prueba">Especialización <i class="fa-solid fa-minus"></i></p>
         <hr class="filter-divider">
     </div>
 
 
-    <div>
+    <div class="filter-type" name="specialization-filter">
         <input type="radio" name="specialization" value="specialization1" id="specialization1">
         <label for="specialization1">specialization1</label><br>
         <input type="radio" name="specialization" value="specialization2" id="specialization2">
@@ -16,14 +16,14 @@
         <input type="radio" name="specialization" value="specialization4" id="specialization4">
         <label for="specialization4">specialization4</label>
     </div>
-    <div class="Price-filter">
+    <div class="Price-filter filter-type" name="Price-filter">
         <p class="text-filter">Precio <i class="fa-solid fa-minus"></i></p>
-        <hr class="filter-divider">
+        <hr class="filter-divider" >
     </div>
     <p>Precio por consulta:</p>
     <input type="range">
     <p>Hasta 20 € </p>
-    <div class="Lorem-filter"> <!--Podemos usar genero o experiencia -->
+    <div class="Lorem-filter filter-type" name="Lorem-filter"> <!--Podemos usar genero o experiencia -->
         <p class="text-filter">Lorem <i class="fa-solid fa-minus"></i></p>
 
         <hr class="filter-divider">

@@ -904,32 +904,35 @@ header nav{
     padding: 0;
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (max-width: 500px){
 
     .nutritionist_list-page {
+
+    .filter-listNutritionist {
+        visibility: hidden;
+    }
+    .combine-filter-nutritionist {
+        margin-left: 8px;
+    }
+    .name-search-filter input {
+        width: 90%;
+    }
     /* The sidepanel menu */
     .sidepanel {
-        height: 250px; /* Specify a height */
-        width: 0; /* 0 width - change this with JavaScript */
 
+        height: fit-content;
+        width: 0; /* 0 width - change this with JavaScript */
         z-index: 1; /* Stay on top */
-        top: 0;
-        left: 0;
-        background-color: #1cc869; /* Black*/
+
+        background-color: #75bf60; /* Black*/
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        transition: 0.2s; /* 0.5 second transition effect to slide in the sidepanel */
+        position: fixed;
+        top: 113px;
     }
 
-    /* The sidepanel links */
-    .sidepanel a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
+
 
 
     /* Position and style the close button (top right corner) */
@@ -949,7 +952,7 @@ header nav{
         color: white;
         padding: 10px 15px;
         border: none;
-        max-width: 70px;
+        max-width: fit-content;
         max-height: 70px;
         position: fixed; /* Stay in place */
         z-index: 2;
