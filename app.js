@@ -60,6 +60,10 @@ app.get("/contacto", (req, res) => {
     res.sendFile(path.join(__dirname, pages["/contacto"]))
 });
 
+app.post("/login", (req , res) => {
+    console.log(req.body);
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
