@@ -909,13 +909,10 @@ header nav{
     padding: 0;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 1099px){
 
     .nutritionist_list-page {
 
-    .filter-listNutritionist {
-        visibility: hidden;
-    }
     .combine-filter-nutritionist {
         margin-left: 8px;
     }
@@ -971,15 +968,16 @@ header nav{
     }
 
 }
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 1100px){
     .nutritionist_list-page {
         #filter-hamburger {
             display: none;
         }
-        .sidepanel{
-            display: none;
-        }
-    }
+        .sidepanel {
+            display: flex;
+            flex: 1;
+            flex-direction: column;}
+}
 }
 
 @media all and (max-width: 1200px){
