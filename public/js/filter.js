@@ -11,20 +11,27 @@ function openNav() {
         filterShowed = true;
     }
 }
-let filterID;
-let filterDescShowed = true;
-function openDescription(name, id) {
-    filterID= document.getElementById(id).innerHTML;
+
+let filterDescShowed;
+let check
+function openDescription(name, id, text) {
+    check =  document.getElementsByClassName("filter-type").namedItem(name).style.height
+    if(check === ""){
+        filterDescShowed = true;
+    }else {
+        filterDescShowed = false;
+    }
     if (filterDescShowed) {
         document.getElementsByClassName("filter-type").namedItem(name).style.height = "0";
         document.getElementsByClassName("filter-type").namedItem(name).style.display = "none";
-        document.getElementsByClassName("text-filter").namedItem('prueba').innerHTML = filterID + "&#43;";
+        document.getElementsByClassName("text-filter").namedItem(text).innerHTML
+            = id + " <i class=\"fa-solid fa-plus\"></i>";
         filterDescShowed = false;
     } else {
         document.getElementsByClassName("filter-type").namedItem(name).style.height = "";
         document.getElementsByClassName("filter-type").namedItem(name).style.display = "";
-        document.getElementsByClassName("text-filter").namedItem('prueba').innerHTML =filterID + "&#45";
-
+        document.getElementsByClassName("text-filter").namedItem(text).innerHTML
+            = id + " <i class=\"fa-solid fa-minus\"></i>";
         filterDescShowed = true;
     }
 }

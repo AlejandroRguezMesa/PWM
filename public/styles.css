@@ -971,7 +971,16 @@ header nav{
     }
 
 }
-
+@media only screen and (min-width: 500px){
+    .nutritionist_list-page {
+        #filter-hamburger {
+            display: none;
+        }
+        .sidepanel{
+            display: none;
+        }
+    }
+}
 
 @media all and (max-width: 1200px){
     header nav .link-container{
