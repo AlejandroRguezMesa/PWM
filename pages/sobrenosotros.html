@@ -5,7 +5,7 @@
     <script src="/template-loader.js" ></script>
     <link rel="stylesheet" href="/styles.css" />
     <title>Sobre Nosotros</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -13,11 +13,13 @@
   
 </head>
 <body>
-    <header load-from-file="/templates/header.html"></header>
-    <main class="main-sobrenosotros">
-    <div class="video-container">
-        <video autoplay loop muted class="video-background">
-            <source src="/resources/sobrenosotros_video_prueba.mp4" type="video/mp4"> <!-- Ruta del video -->
+
+<header load-from-file="/templates/header.html"></header>
+
+<main class="main-sobrenosotros">
+<div class="video-container">
+    <video autoplay loop muted class="video-background">
+        <source src="/resources/sobrenosotros_video_prueba.mp4" type="video/mp4"> <!-- Ruta del video -->
             Tu navegador no soporta la etiqueta de video.
         </video>
         <div class="overlay"></div>
@@ -59,9 +61,11 @@
     </main>
     <div load-from-file="templates/login.html"></div>
 </div>
+
     <footer load-from-file="templates/footer.html"></footer>
 <script>
     loadTemplates();
+
 </script>
 
 </body>
