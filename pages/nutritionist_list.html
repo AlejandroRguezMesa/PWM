@@ -21,13 +21,8 @@
             <div load-from-file="templates/filternutritionist.html"></div>
         </div>
     </div>
-    <button class="openbtn" onclick="openNav()">&#9776;</button>
-    <div class="filter-listNutritionist">
-        <div class="combine-filter-nutritionist">
-            <div load-from-file="templates/filter.html"></div>
-            <div load-from-file="templates/filternutritionist.html"></div>
-        </div>
-    </div>
+    <button class="openbtn" id="filter-hamburger" onclick="openNav()">&#9776 Filtros</button>
+
     <div class="card-container">
         <div class="card-listNutritionist">
             <div load-from-file="templates/nutritionistcard.html"></div>
@@ -46,21 +41,12 @@
 </main>
 
 <footer load-from-file="templates/footer.html"></footer>
+<script src="/js/filter.js"></script>
 <script>
     loadTemplates();
 
 
-        let filterShowed;
-    function openNav() {
 
-        if (filterShowed) {
-            document.getElementById("mySidepanel").style.width = "250px";
-            filterShowed = false;
-        } else {
-            document.getElementById("mySidepanel").style.width = "0";
-            filterShowed = true;
-        }
-    }
 
 
 </script>

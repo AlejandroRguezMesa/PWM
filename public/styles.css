@@ -722,6 +722,11 @@ header nav{
             box-shadow: 2px 2px 2px 0px #8080805e;
             height: 30px;
             border-radius: 3px;
+
+            &.clasic-button{
+                 margin-bottom: 0;
+                 height: auto;
+             }
         }
 
         & label{
@@ -1028,32 +1033,32 @@ header nav{
     padding: 0;
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (max-width: 1099px){
 
     .nutritionist_list-page {
+
+    .combine-filter-nutritionist {
+        margin-left: 8px;
+    }
+    .name-search-filter input {
+        width: 90%;
+    }
     /* The sidepanel menu */
     .sidepanel {
-        height: 250px; /* Specify a height */
-        width: 0; /* 0 width - change this with JavaScript */
 
+        height: fit-content;
+        width: 0; /* 0 width - change this with JavaScript */
         z-index: 1; /* Stay on top */
-        top: 0;
-        left: 0;
-        background-color: #1cc869; /* Black*/
+
+        background-color: #75bf60; /* Black*/
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        transition: 0.2s; /* 0.5 second transition effect to slide in the sidepanel */
+        position: fixed;
+        top: 113px;
     }
 
-    /* The sidepanel links */
-    .sidepanel a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
+
 
 
     /* Position and style the close button (top right corner) */
@@ -1073,7 +1078,7 @@ header nav{
         color: white;
         padding: 10px 15px;
         border: none;
-        max-width: 70px;
+        max-width: fit-content;
         max-height: 70px;
         position: fixed; /* Stay in place */
         z-index: 2;
@@ -1085,5 +1090,75 @@ header nav{
 
 
     }
+
+}
+@media only screen and (min-width: 1100px){
+    .nutritionist_list-page {
+        #filter-hamburger {
+            display: none;
+        }
+        .sidepanel {
+            display: flex;
+            flex: 1;
+            flex-direction: column;}
+}
+}
+
+@media all and (max-width: 1200px){
+    header nav .link-container{
+        margin-right: 10px;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .index-page main .main-inner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        .text-container{
+            width: 70%;
+
+            .button-container{
+                text-align: center;
+            }
+        }
+    }
+}
+@media all and (max-width: 700px) {
+
+    header nav .link-container{
+        display: none;
+    }
+    .index-page main h2{
+        font-size: 1.1em;
+    }
+
+    .index-page main .main-inner {
+        .image-container{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .text-container{
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+
+            & h1{
+              font-size: 2em;
+            }
+            & h4{
+              font-size: 1.3em;
+            }
+            .button-container{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+@media all and (max-width: 500px) {
+
 
 }
