@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/nutritional_calendar_styles.css" />
+    <script src="/template-loader.js" ></script>
   <title>Calendario Nutricional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 
 </head>
 <body>
-
+<header load-from-file="/templates/header.html"></header>
   <main>
     <div class="container">
         <div class="calendar">
@@ -39,17 +40,7 @@
                </div>
                <div class="calendar__dates" id="dates">
                </div>
-               <div class="day_note">
-                <div class="text-area">
-                  <textarea placeholder="Indica al nutricionista lo que quieras sobre este día" class="item_day_note"></textarea>
-                </div>
-                <div class="send-day-note-btn">
-                    <button class="send_day_note" id="send_day_note">enviar</button>
-                </div>
-                <div class="close-day-note-btn">
-                <button class="close_day_note" id="close_day_note">❌</button>
-                </div>
-            </div>  
+
                <div class="title" id="calendartittle">Calendario Nutricional</div>
        
           </div>
@@ -65,17 +56,7 @@
               <div class="add-note-btn">
               <button class="noteemoji" id="note">📝</button>
               </div>
-                <div class="dialog">
-                  <div class="text-area">
-                    <textarea placeholder="Indica o aclara al cliente lo que desees acerca del plato" class="nutricionist_note"></textarea>
-                  </div>
-                  <div class="send_btn">
-                  <button class="send_note" id="send">enviar</button>
-                  </div>
-                  <div class="close-dialog-btn">
-                  <button class="closedialog" id="closedialog">❌</button>
-                  </div>
-                </div>
+
             <div class="titledish">
               <i class="punto" id="point">&#x25CF;</div></i>
               <h3 class="dish-title" id="dish-title">Ejemplo plato
@@ -92,8 +73,29 @@
           </div>
         </div>
           </div>
-
-          <div class="right-dish-form">
+            <div class="dialog">
+                <div class="text-area">
+                    <textarea placeholder="Indica o aclara al cliente lo que desees acerca del plato" class="nutricionist_note"></textarea>
+                </div>
+                <div class="send_btn">
+                    <button class="send_note" id="send">enviar</button>
+                </div>
+                <div class="close-dialog-btn">
+                    <button class="closedialog" id="closedialog">❌</button>
+                </div>
+            </div>
+            <div class="day_note">
+                <div class="text-area">
+                    <textarea placeholder="Indica al nutricionista lo que quieras sobre este día" class="item_day_note"></textarea>
+                </div>
+                <div class="send-day-note-btn">
+                    <button class="send_day_note" id="send_day_note">enviar</button>
+                </div>
+                <div class="close-day-note-btn">
+                    <button class="close_day_note" id="close_day_note">❌</button>
+                </div>
+            </div>
+            <div class="right-dish-form">
             <div class="add-dish-footer">
             <button class="cancel-btn" id="cancel">Cancelar</button>
             </div>
@@ -104,7 +106,10 @@
       </div>
     </main>
 <script src="/js/client_calendar.js"></script>
-
+<footer load-from-file="/templates/footer.html"></footer>
+<script>
+    loadTemplates();
+</script>
 
 </body>
 </html>

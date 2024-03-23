@@ -1,11 +1,11 @@
 
 /* Nutritional Calendar */
+
   .container {
     position: relative;
-    width: 1200px;
+    width: 100%;
     height: 100%;
     min-height: 700px;
-    max-width: 1500px;
     margin: 0 auto;
     padding: 5px;
     color: #fff;
@@ -31,17 +31,14 @@
     padding: 20px;
   }
 
-  .calendar {
-    flex-grow: 1;
-    max-width: 900px; 
 
-  }
 
   .calendar {
     background: rgb(238, 233, 233);
     position: relative;
-    width: 100%; 
-    max-width: 900px;
+    width: 100%;
+    height:100%;
+    max-height:800px;
     padding: 1em; 
     margin: 30px;
     border-radius: 0 5px 5px 0;
@@ -116,8 +113,8 @@
     top: 0;
     left: 50%; 
     text-align:center;
-    margin-top:30px;
-    color: #1ca846;;
+    margin:10px;
+    color: #6a80e1;;
     font-size: 2em;
     font-weight: bold;
     width: 100%; 
@@ -173,10 +170,11 @@
     font-size: 1.3em;
     cursor:pointer;
   }
-  .calendar__items.active { 
+.calendar__items.active {
 
-    max-height: 300px;
-  }
+  max-height: 300px;
+}
+
 
   .calendar__today {
     background: #c0d3ff;
@@ -244,6 +242,7 @@
     font-weight: bold;
     color: #7d1fb7; 
     text-align: center;
+    padding:5px;
   }
   .dishes {
     position: relative;
@@ -299,7 +298,6 @@
 
   .dish-title {
     color: #6f91e1;
-    position: relative;
   }
 
   .dish-title:hover {
@@ -312,89 +310,93 @@
 
   .right-dish-form{
     display: flex;
-    min-width: 190px;
-    margin-right: 60%;
-    background-color: rgba(123, 151, 115, 0.162);
+    max-width: 50%;
+    margin-left:10px;
     border-radius: 0 20px 20px 0;
   }
 
   .add-dish-wrapper {
-    text-align: center;
-    width: 70%; 
-    padding: 20px;
     position: relative;
+    width: 100%;
+    margin-left: 24px;
+    background-color: #5b67af;
+    border-radius: 0 20px 0 0;
+    padding-bottom: 20px;
   }
 
   .add-dish-header {
     display: flex;
+    background-color: #1c2879;
+    width:100%;
     justify-content: center;
     align-items: center;
     font-size: 0.8em;
     font-weight: bolder;
     margin-bottom: 20px;
+    border-radius: 0 20px 0 0;
+
     
   }
 
   .add-dish-body {
     margin-bottom: 20px;
-    width:100%;
+    width:70%;
+    margin:auto;
   }
 
 
   .add-dish-body .add-dish-input input {
     width: 100%;
     height: 100%;
+    padding:5px;
     font-size: 1rem;
     font-weight: 400;
-    color: black;
-    background-color: #4f6596;
-    margin-top: 1px;
-    
-
+    color: white;
+    background-color: #a6a3a3;
+    margin-top: 10px;
   }
 
   .add-dish-body .add-dish-input input::placeholder {
-    color: #9b9b9b;
-    
+    color: #4b4b4b;
   }
 
   .add-dish-footer{
     display: flex;
     cursor: pointer;
-    background-color:#6f91e1;
     border-radius: 15px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .add-dish-footer .add-dish-btn{
     position: absolute;
+    width:60%;
     cursor: pointer;
-    background-color:#6f91e1;
-    border-radius: 15px;
-  }
-  .add-dish-footer .cancel-btn{
-    position: absolute;
     bottom:0;
-    cursor: pointer;
-    background-color:#6f91e1;
-    border-radius: 15px;
+    background-color: #9bc09a;
+    border: 2px solid black;
   }
+.add-dish-footer .cancel-btn{
+  position: absolute;
+  width:26%;
+  right:0;
+  bottom:0;
+  background-color: #d33c5c;
+  border: 2px solid black;
+}
+
   .dialog {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
+    position: relative;
     width: 80%; 
     max-width: 500px; 
     height: auto; 
-    max-height: 80%; 
-    transform: translate(calc(-50% + 350px), calc(-50% + 200px));
+    max-height: 80%;
     background-color: #3f6634;
+    margin:auto;
     padding: 20px;
     border-radius: 10px;
-    z-index: 9999;
     color: #32df0b;
-    overflow: auto;
+
   }
   .dialog::before{
     content: 'Plato Ejemplo, DiaSemana';
@@ -490,20 +492,16 @@
   }
   .day_note {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 80%; 
-    max-width: 400px; 
-    height: auto; 
-    max-height: 80%; 
-    transform: translate(calc(-50% + 370px), calc(-50% + 100px));
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    max-height: 80%;
     background-color: #3f6634;
+    margin:auto;
     padding: 20px;
     border-radius: 10px;
-    z-index: 9999;
     color: #32df0b;
-    overflow: auto; 
   }
 
 
@@ -566,64 +564,38 @@
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.1), 0 0 8px rgba(102,175,233,.6);
   }
 
+@media screen and (max-width: 1200px) {
 
-  @media screen and (max-width: 500px) {
-    body {
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
-    .container {
-      position: relative;
-      margin: 0 auto;
-      padding: 5px;
-      color: #fff;
-      display: flex;
+  .dish-date{
+    font-size:1.4em;
+  }
+  .dish-day{
+    font-size: 1em;
+  }
+  .add-dish-wrapper{
+    margin-left: 24px;
+    min-width: 280px;
+  }
+}
+
+  @media screen and (max-width: 800px) {
+    .container{
       flex-direction: column;
-      width: 1000px;
-      border-radius: 10px;
-      background-color: #373c4f;
+      width:100%;
+      height:100%;
+      margin:0;
     }
-  
+
     .container::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%; 
-      background: linear-gradient(to bottom right, transparent 50%, #475072 50%); 
-      border-radius: 10px;
+      display:none;
     }
-    .calendar {
-      flex-grow: 1;
-      max-width: 900px; 
-  
-    }
-  
-    .calendar {
-      background: rgb(238, 233, 233);
-      position: relative;
-      width: 100%; 
-      max-width: 900px;
-      padding: 1em; 
-      margin: 30px;
-      border-radius: 0 5px 5px 0;
+    .calendar{
+      margin:auto;
+      width:90%;
+      height:90%;
+
     }
 
-
-
-
-
-
-    .leftcontainer, .rightcontainer {
-      width: 100%;
-      height: 100%;
-      padding: 20px 0;
-    }
-    .rightcontainer {
-      min-height: 100vh; 
-    }
-  
     .calendar::before,
     .calendar::after {
       top: 100%;
@@ -635,9 +607,138 @@
       box-sizing: border-box; /* Asegurando que el ancho incluya padding y border */
     }
     .calendar::before {
-      width: 94%; /* Revisa si necesitas ajustar este ancho */
+      width: 94%;
       top: calc(100% + 12px);
     }
+    .title{
+      font-size:1.4em;
+    }
+    .calendar__info{
+      padding:0;
+      font-size:1.3em;
+    }
+    .calendar__prev, .calendar__next, .calendar__item {
+      font-size:1em;
+    }
+
+    .dropdown-content{
+      top:7%;
+    }
+    #weekly-option {
+      font-size:12px;
+      padding: 2px 5px;
+    }
+    .calendar__item:hover {
+      color: black;
+      font-weight: 1000;
+      font-size: 1em;
+    }
+    .leftcontainer, .rightcontainer {
+      width: 100%;
+      height: 100%;
+      padding: 20px 0;
+    }
+    .rightcontainer {
+      min-height: 500px;
+
+    }
+    .rightplus{
+      position:absolute;
+      bottom:0;
+      right:0;
+    }
+    .add-dish-body .add-dish-input input::placeholder {
+      font-size:0.8em;
+      color: #4b4b4b;
+    }
+
+    .add-dish-footer .cancel-btn {
+
+      width:35%;
+    }
+    .add-dish-footer .add-dish-btn{
+      width: 55%;
+    }
+
+    .add-dish-wrapper{
+      margin:0;
+      min-width: 230px;
+    }
+    .add-dish-body .add-dish-input input {padding:0}
+
+    .closeemoji, .noteemoji{
+      font-size:1.2em;
+      background-color: transparent;
+    }
+    .dialog::before{
+      font-size:1.2em;
+    }
+    .right-nutritional-data{
+      width:50%;
+      line-height: 5px;
+    }
+    .right-nutritional-data p {
+
+      font-size:0.8em;
+      line-height: 1;
+    }
+
   }
+
+@media screen and (max-width: 1024px),(min-height: 900px) {
+  .container{
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    margin:0;
+  }
+
+  .container::before {
+    display:none;
+  }
+  .calendar{
+    margin:auto;
+    width:90%;
+    height:90%;
+
+  }
+
+  .calendar::before,
+  .calendar::after {
+    top: 100%;
+    left: 50%;
+    width: 97%; /* Revisa si necesitas ajustar este ancho */
+    height: 12px;
+    border-radius: 0 0 5px 5px;
+    transform: translateX(-50%);
+    box-sizing: border-box; /* Asegurando que el ancho incluya padding y border */
+  }
+  .calendar::before {
+    width: 94%;
+    top: calc(100% + 12px);
+  }
+
+  .leftcontainer, .rightcontainer {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+  }
+  .rightcontainer {
+    min-height: 500px;
+  }
+
+  .closeemoji, .noteemoji{
+    background-color: transparent;
+  }
+
+  .dish-date{
+    font-size:1.6em;
+  }
+  .dish-day{
+    font-size: 1.4em;
+  }
+
+
+}
   
   
