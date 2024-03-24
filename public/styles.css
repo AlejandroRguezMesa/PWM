@@ -440,7 +440,6 @@ Otrosenlaces
 }
 
 .otrosenlaces_header p {
-    width: 80%;
     margin-bottom: 20px;
     
 }
@@ -448,7 +447,10 @@ Otrosenlaces
 .otrosenlaces_images {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+.segundo_otrosenlaces_images{
+    display:none;
 }
 
 .otrosenlaces_image {
@@ -464,6 +466,47 @@ Otrosenlaces
 .otrosenlaces_image p {
     text-align: justify;
 }
+@media (min-height: 900px){
+    .segundo_otrosenlaces_images{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .otrosenlaces_header p{
+        font-size:1.4em;
+        text-align: justify;
+    }
+    .otrosenlaces_image {
+        flex: 0 1 32%;
+    }
+    .otrosenlaces_image p {
+        text-align: center;
+        font-size:1.2em;
+    }
+
+}
+@media (max-width: 800px){
+    .segundo_otrosenlaces_images{display:none;}
+    .otrosenlaces_images{
+        display:flex;
+        flex-direction: column;
+        width:95%;
+        margin:auto;
+    }
+    .otrosenlaces_image img{
+        width:100%;
+        height:auto;
+    }
+    .otrosenlaces_header p {
+        text-align: justify;
+        font-size: 1.6em;
+    }
+    .otrosenlaces_image p {
+        font-size:1.4em;
+        text-align: center;
+    }
+
+}
 /* Terminos */
 
 .terminos_container {
@@ -477,7 +520,7 @@ Otrosenlaces
     
 }
 
-.terminos h1 {
+.terminos_header h1 {
     border-radius: 20px 20px 0px 0px;
     text-align: center;
     color: #333;
@@ -515,6 +558,37 @@ Otrosenlaces
     margin-top: 30px;
     color: #888;
 }
+@media (max-width: 600px){
+    .terminos_main{padding:0}
+    .terminos_container{
+        width:100%;
+        margin:0;
+        margin-top:20px;
+        border-radius: 20px 20px 0px 0px;
+        padding:0;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .terminos_header h1{
+        font-size:1.6em;
+        padding-left:0;
+        margin:0;
+        margin-bottom: 40px;
+    }
+    .terminos h2 {
+        color: #3f6634;
+        font-size: 1.4em;
+        border-bottom: 2px solid #3f6634;
+        padding:10px;
+    }
+
+    .terminos p {
+
+        padding:10px;
+    }
+}
+
+
 
 
 
@@ -1048,6 +1122,7 @@ header nav{
     padding: 0;
 }
 
+@media only screen and (max-width: 1099px){
 @media only screen and (max-width: 1099px){
 
     .nutritionist_list-page {
