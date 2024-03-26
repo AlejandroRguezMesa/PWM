@@ -1010,6 +1010,7 @@ header nav{
     margin: auto;
     border:2px solid rgb(151, 148, 148);
     margin-bottom:20px;
+
 }
 
 
@@ -1017,6 +1018,7 @@ header nav{
     margin-left: 10px;
     flex: 0 0 93%;
     text-align: justify;
+    max-width: 80%;
 
 }
 
@@ -1086,7 +1088,9 @@ header nav{
 }
 .nutritionist_list-page {
 
-    display: flex;
+    .nutritionist-list-content {
+        display: flex;
+    }
 
     .card-container{
         flex-direction: column;
@@ -1122,8 +1126,8 @@ header nav{
     padding: 0;
 }
 
-@media only screen and (max-width: 1099px){
-@media only screen and (max-width: 1099px){
+
+@media only screen and (max-width: 1439px){
 
     .nutritionist_list-page {
 
@@ -1182,15 +1186,20 @@ header nav{
     }
 
 }
-@media only screen and (min-width: 1100px){
+@media only screen and (min-width: 1440px){
     .nutritionist_list-page {
         #filter-hamburger {
             display: none;
         }
+        .nutritionist-list-content {
+            display: flex;
+        }
         .sidepanel {
             display: flex;
             flex: 1;
-            flex-direction: column;}
+            flex-direction: column;
+            width: 500px;
+        }
 }
 }
 
@@ -1250,5 +1259,9 @@ header nav{
 }
 @media all and (max-width: 500px) {
 
+    .faq_one p, .faq_two p, .faq_three p, .faq_four p{
+        font-size: 0.7em;
 
+
+    }
 }
