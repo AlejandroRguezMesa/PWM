@@ -1265,3 +1265,162 @@ header nav{
 
     }
 }
+@media only screen and (max-width: 425px) {
+    .clasic-button {
+        font-size: 0.8rem;
+        width: 80px;
+    }
+    .nutritionist_list-page {
+
+        .main-nutritionist-card {
+            flex-direction: column;
+            width: 100%;
+        }
+        .nutritionist_image {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .location_price_contact {
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 0.8rem;
+
+        }
+
+        .tag {
+            display: flex;
+            align-items: center;
+
+        }
+        .tags {
+            font-size: 0.8rem;
+        }
+        .name {
+            font-size: 0.8rem;
+        }
+
+        .card-container {
+            align-content: unset;
+        }
+
+
+
+        .nutritionist_card {
+            min-width: unset;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column-reverse;
+
+
+        }
+        .description {
+            padding: 8px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+    .nutritionist-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-second-info-container {
+        display: none;
+    }
+    .social_media-laptop {
+        display: none;
+    }
+    .text-name-2 {
+        font-size: 1rem;
+    }
+
+    .name-laptop {
+        display: none;
+    }
+}
+@media only screen and (min-width: 426px) {
+
+    /* Cards */
+    .tags {
+        order: -1;
+        margin-top: 0px;
+    }
+
+    .description {
+        padding: 8px;
+    }
+
+
+    .nutritionist-info-container {
+        display: flex;
+    }
+
+    .main-nutritionist-card {
+        flex-direction: column;
+    }
+
+    .mobile-info-container {
+        display: none;
+    }
+
+    .text-name-2 {
+        display: none;
+    }
+
+    .mobile-second-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social_media-laptop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .nutritionist_card {
+        max-width: 1000px;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .text-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50%;
+    }
+
+    .nutritionist_image {
+        justify-content: center;
+    }
+
+    .nutritionist_image img  {
+        width: 70%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .tag {
+        min-width: 60px;
+        display: flex;
+        justify-content: center;
+    }
+}
