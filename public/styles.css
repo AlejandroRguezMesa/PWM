@@ -80,19 +80,19 @@ footer a:hover {
 
 .social-icons {
     margin-top: 10px;
-    text-align: center; /* Centra los elementos */
+    text-align: center;
 }
 
 .social-icons a {
     display: inline-block;
-    width: 20px; /* Cambia el ancho de las imágenes */
-    height: 20px; /* Cambia la altura de las imágenes */
-    line-height: 20px; /* Ajusta la línea de altura para centrar verticalmente */
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     margin: 0 5px;
 
 }
 .logo {
-    width: 20px; /* Cambia este valor al tamaño deseado */
+    width: 20px;
 }
 
 
@@ -158,7 +158,7 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Usamos el 100% de la altura de la ventana del navegador */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -277,14 +277,12 @@ body {
     width: 95%;
 }
 
-
-
 @media (max-width: 1200px) {
     .video-container {
 
         position: relative;
         width: 100%;
-        height: 100vh; /* Usamos el 100% de la altura de la ventana del navegador */
+        height: 100vh;
         overflow: hidden;
     }
     .header{
@@ -321,8 +319,6 @@ body {
         width: calc(100% - 50px);
         margin-left:50px;
         margin-top:460px;
-
-
     }
     .down_container_header h1{
         color: #3f6634;
@@ -332,7 +328,7 @@ body {
     .image-container {
         width: 95%;
         margin:auto;
-        height: 450px; /* Cambia este valor según tus necesidades */
+        height: 450px;
     }
 
     .text-container {
@@ -405,7 +401,7 @@ body {
     .image-container {
         width: 95%;
         margin:auto;
-        height: 300px; /* Cambia este valor según tus necesidades */
+        height: 300px;
     }
 
     .text-container {

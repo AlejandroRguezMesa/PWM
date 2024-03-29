@@ -600,11 +600,11 @@
     .calendar::after {
       top: 100%;
       left: 50%;
-      width: 97%; /* Revisa si necesitas ajustar este ancho */
+      width: 97%;
       height: 12px;
       border-radius: 0 0 5px 5px;
       transform: translateX(-50%);
-      box-sizing: border-box; /* Asegurando que el ancho incluya padding y border */
+      box-sizing: border-box;
     }
     .calendar::before {
       width: 94%;
@@ -711,11 +711,11 @@
   .calendar::after {
     top: 100%;
     left: 50%;
-    width: 97%; /* Revisa si necesitas ajustar este ancho */
+    width: 97%;
     height: 12px;
     border-radius: 0 0 5px 5px;
     transform: translateX(-50%);
-    box-sizing: border-box; /* Asegurando que el ancho incluya padding y border */
+    box-sizing: border-box;
   }
   .calendar::before {
     width: 94%;
