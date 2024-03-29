@@ -1298,6 +1298,21 @@ header nav{
             }
         }
     }
+
+    .register-page .form-register-container form{
+        width: 90%;
+
+    }
+}
+
+@media all and (max-width: 900px) {
+    main.register-page{
+        flex-direction: column-reverse;
+
+        .image-register img{
+            width: 60%;
+        }
+    }
 }
 
 @media all and (max-width: 1400px) {

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body class="index-page">
@@ -24,17 +25,17 @@
             <span class="selected">Cliente</span>
             <span>Nutricionista</span>
         </div>
-        <form>
+        <form id="register-form">
             <label>E-mail</label>
-            <input type="email"/>
+            <input type="email" required/>
             <label>Contraseña</label>
-            <input type="password"/>
+            <input type="password" required/>
             <label>Nombre</label>
-            <input type="text"/>
+            <input type="text" required pattern=".{3,30}"/>
             <label>Apellidos</label>
             <input type="text"/>
             <label>Fecha de nacimiento</label>
-            <input type="date"/>
+            <input type="date" required/>
             <label>Alergias, intoleracncias, patologias</label>
             <textarea type="text" placeholder="Separado por comas" ></textarea>
             <label>Preferencias alimenticias</label>
@@ -56,6 +57,17 @@
 <footer load-from-file="templates/footer.html"></footer>
 <script>
     loadTemplates();
+
+    form_reg = document.getElementById("register-form");
+    form_reg.onsubmit = (e) => {
+        e.preventDefault();
+        Swal.fire({
+            title: "Registro Correcto",
+            text: "Le hemos enviado un email.",
+            icon: "success"
+        });
+        form_reg.reset();
+    }
 </script>
 <script src="js/utils.js"></script>
 </body>
