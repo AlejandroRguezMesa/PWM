@@ -773,7 +773,6 @@ header nav{
 }
 
 .flotante{
-
     right: -350px;
     top: 100px;
     transition: right .5s cubic-bezier(0.7, -0.24, 0.27, 1.39);
@@ -788,6 +787,10 @@ header nav{
 
     &.showed{
         right: 10px;
+    }
+
+    &.oculto{
+        display: none;
     }
 
     .title-login{
@@ -1206,6 +1209,19 @@ header nav{
 @media all and (max-width: 1200px){
     header nav .link-container{
         margin-right: 10px;
+    }
+
+    .index-page main .main-inner {
+        .text-container h1{
+            text-align: center;
+        }
+        .image-container {
+            width: 80%;
+
+            & img{
+                width: inherit;
+            }
+        }
     }
 }
 

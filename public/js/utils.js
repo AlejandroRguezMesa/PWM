@@ -1,6 +1,6 @@
 let formShowed = false;
-
 setTimeout(() => {
+    form = document.querySelector(".flotante");
     formLogin = document.getElementById("form-login-all");
 
     formLogin.onsubmit = (event) => {
@@ -21,6 +21,8 @@ setTimeout(() => {
             })
         });
     }
+    form.classList.add("oculto");
+
 }, 500);
 
 
@@ -28,16 +30,35 @@ setTimeout(() => {
 function showLogin(event){
 
     if (formShowed){
-        const form = document.querySelector(".flotante");
+        setTimeout(() => form.classList.add("oculto"), 600);
         form.classList.remove("showed");
         formShowed = false;
     } else{
-        const form = document.querySelector(".flotante");
-        form.classList.add("showed");
+        form.classList.remove("oculto");
+        setTimeout(() =>  form.classList.add("showed"), 100);
         formShowed = true;
     }
 
-
+    /*loadJsonData("user.json").then((obj) => {
+        console.log(obj);
+    }).catch((e) => console.log(e));*/
 
 }
 
+async function loadJsonData(fileUrl){
+
+    let file = await fetch(fileUrl);
+
+    let text = await file.text();
+
+    let parsedObj = null;
+
+    try {
+        parsedObj = JSON.parse(text);
+    } catch (e) {
+        return Promise.reject("Error parse JSON");
+    }
+
+    return Promise.resolve(parsedObj);
+
+}

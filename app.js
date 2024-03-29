@@ -18,6 +18,7 @@ const pages = { //Aquí se delcaran las paginas de la web: "url":"ubicacion-arch
 }
 
 app.use(express.static('public'))
+app.use(express.static('data'))
 
 //Aquí te declara los respectivos gets de las paginas
 app.get("/", (req, res) => {
@@ -59,10 +60,6 @@ app.get("/terminos", (req, res) => {
 app.get("/contacto", (req, res) => {
     res.sendFile(path.join(__dirname, pages["/contacto"]))
 });
-
-app.post("/login", (req , res) => {
-    console.log(req.body);
-})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
