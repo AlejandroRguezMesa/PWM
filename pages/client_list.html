@@ -16,11 +16,16 @@
 <main class="client_list-page">
     <div class="filter-listClient">
     <p class="client_list-filter_text">Bienvenido de nuevo, Nutricionista</p>
-        <div class="combine-filter-client">
-            <div load-from-file="templates/filter.html"></div>
-            <div load-from-file="templates/filterclient.html"></div>
-        </div>
+                <div id="mySidepanel" class="sidepanel">
+                    <div class="combine-filter-client">
+                        <div load-from-file="templates/filter.html"></div>
+                        <div load-from-file="templates/filterclient.html"></div>
+                    </div>
+                </div>
+        <button class="openbtn" id="filter-hamburger" onclick="openNav()">&#9776 Filtros</button>
     </div>
+
+
     <div class="card-container">
         <p class="client_list-text">Lista de clientes</p>
         <div class="card-listClient">
@@ -40,6 +45,7 @@
 </main>
 
 <footer load-from-file="templates/footer.html"></footer>
+<script src="/js/filter.js"></script>
 <script>
     loadTemplates();
 </script>

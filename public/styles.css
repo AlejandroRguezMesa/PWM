@@ -80,19 +80,19 @@ footer a:hover {
 
 .social-icons {
     margin-top: 10px;
-    text-align: center; /* Centra los elementos */
+    text-align: center;
 }
 
 .social-icons a {
     display: inline-block;
-    width: 20px; /* Cambia el ancho de las imágenes */
-    height: 20px; /* Cambia la altura de las imágenes */
-    line-height: 20px; /* Ajusta la línea de altura para centrar verticalmente */
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     margin: 0 5px;
 
 }
 .logo {
-    width: 20px; /* Cambia este valor al tamaño deseado */
+    width: 20px;
 }
 
 
@@ -158,7 +158,7 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Usamos el 100% de la altura de la ventana del navegador */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -277,14 +277,12 @@ body {
     width: 95%;
 }
 
-
-
 @media (max-width: 1200px) {
     .video-container {
 
         position: relative;
         width: 100%;
-        height: 100vh; /* Usamos el 100% de la altura de la ventana del navegador */
+        height: 100vh;
         overflow: hidden;
     }
     .header{
@@ -321,8 +319,6 @@ body {
         width: calc(100% - 50px);
         margin-left:50px;
         margin-top:460px;
-
-
     }
     .down_container_header h1{
         color: #3f6634;
@@ -332,7 +328,7 @@ body {
     .image-container {
         width: 95%;
         margin:auto;
-        height: 450px; /* Cambia este valor según tus necesidades */
+        height: 450px;
     }
 
     .text-container {
@@ -405,7 +401,7 @@ body {
     .image-container {
         width: 95%;
         margin:auto;
-        height: 300px; /* Cambia este valor según tus necesidades */
+        height: 300px;
     }
 
     .text-container {
@@ -1150,8 +1146,8 @@ header nav{
         background-color: #75bf60; /* Black*/
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.2s; /* 0.5 second transition effect to slide in the sidepanel */
-        position: fixed;
+        transition: 0.2s;
+        position: absolute;
         top: 113px;
     }
 
@@ -1169,7 +1165,7 @@ header nav{
 
     /* Style the button that is used to open the sidepanel */
     .openbtn {
-        font-size: 20px;
+        font-size: 1rem;
         cursor: pointer;
         background-color: #111;
         color: white;
@@ -1184,10 +1180,75 @@ header nav{
     .openbtn:hover {
         background-color: #444;
     }
-
-
     }
+    .client_list-page {
+        display: unset;
+        .client_list-filter_text {
+            font-size: 1.7rem;
 
+        }
+        .client_list-text {
+            font-size: 2rem;
+        }
+
+        .client_id {
+            font-size: 1.8rem;
+        }
+        .notification{
+            font-size: 2rem;
+        }
+        .client_list-filter_text {
+            text-align: center;
+        }
+
+        .sidepanel {
+            height: fit-content;
+            width: 0;
+            z-index: 1;
+
+            background-color: #75bf60;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.2s;
+            position: absolute;
+            top: 113px;
+        }
+
+
+
+
+        /* Position and style the close button (top right corner) */
+        .sidepanel .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* Style the button that is used to open the sidepanel */
+        .openbtn {
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            max-width: fit-content;
+            max-height: 70px;
+            position: fixed; /* Stay in place */
+            z-index: 2;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+        .name-search-filter input {
+            width: 90%;
+        }
+
+
+}
 }
 @media only screen and (min-width: 1440px){
     .nutritionist_list-page {
@@ -1204,6 +1265,20 @@ header nav{
             width: 500px;
         }
 }
+    .client_list-page {
+        #filter-hamburger {
+            display: none;
+        }
+        .filter-listClient {
+            display: flex;
+        }
+        .sidepanel {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            width: 500px;
+        }
+    }
 }
 
 @media all and (max-width: 1200px){
@@ -1438,5 +1513,11 @@ header nav{
         min-width: 60px;
         display: flex;
         justify-content: center;
+    }
+
+    .client_card {
+        max-width: none;
+        min-width: unset;
+        width: 800px;
     }
 }
