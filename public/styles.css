@@ -58,6 +58,9 @@ p {
 /*
 Footer
 */
+.ocultado {
+    display: none;
+}
 
 footer {
     width:100%;
@@ -276,6 +279,7 @@ body {
     color:  black;
     width: 95%;
 }
+
 
 @media (max-width: 1200px) {
     .video-container {
@@ -1507,6 +1511,7 @@ header nav{
 
     .nutritionist_card {
         max-width: 1000px;
+        min-width: unset;
     }
 
     .social-media {

@@ -25,18 +25,10 @@
     <button class="openbtn" id="filter-hamburger" onclick="openNav()">&#9776 Filtros</button>
 
     <div class="card-container">
-        <div class="card-listNutritionist">
-            <div load-from-file="templates/nutritionistcard.html"></div>
+        <div id="dummy" class="card-listNutritionist ocultado">
+            <div  load-from-file="templates/nutritionistcard.html"></div>
         </div>
-        <div class="card-listNutritionist">
-            <div load-from-file="templates/nutritionistcard.html"></div>
-        </div>
-        <div class="card-listNutritionist">
-            <div load-from-file="templates/nutritionistcard.html"></div>
-        </div>
-        <div class="card-listNutritionist">
-            <div load-from-file="templates/nutritionistcard.html"></div>
-        </div>
+
 
     </div>
     </div>
@@ -44,6 +36,8 @@
 
 <footer load-from-file="templates/footer.html"></footer>
 <script src="/js/filter.js"></script>
+<script src="/js/utils.js"></script>
+<script src="/js/nutritionist_cards.js"></script>
 <script>
     loadTemplates();
 

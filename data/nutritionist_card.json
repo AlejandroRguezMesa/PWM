@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Jorge",
+    "localidad": "Paraguay",
+    "precio": 5,
+    "descripcion": "Soy un nutricionista bastante bueno, tengo mas de 3 años de conocimiento, estudié en la universidad de la laguna.",
+    "tags": ["Vegetarianas","Vegana","Omnivora"]
+  },
+  {
+    "nombre": "Lionel",
+    "localidad": "Guatepeor",
+    "precio": 3,
+    "descripcion": "Soy un nutricionista encargado de dietas vegetarianas y veganas, llevo ya unos 5 años de conocimiento y amor por las dietas, estudié en casa.",
+    "tags": ["Vegetarianas","Vegana"]
+  },
+  {
+    "nombre": "Manito",
+    "localidad": "Asturias",
+    "precio": 4,
+    "descripcion": "Soy un nutricionista encargado de dietas paleo y omnivoras, he trabajado con personas de hasta 40 años.",
+    "tags": ["Vegetarianas","Paleo","Omnivora"]
+  },
+  {
+    "nombre": "Karlos",
+    "localidad": "Guanche",
+    "precio": 13,
+    "descripcion": "Soy un nutricionista basado en dietas de corta duracion. Me gustaria seguir aprendiendo e indagando en estas dietas.",
+    "tags": ["Vegetarianas","Vegana","Paleo"]
+  }
+]
