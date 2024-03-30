@@ -1223,18 +1223,19 @@ header nav{
     .client_list-page {
         display: unset;
         .client_list-filter_text {
-            font-size: 1.7rem;
+            margin-top: 40px;
+            font-size: 1.4rem;
 
         }
         .client_list-text {
-            font-size: 2rem;
+            font-size: 1rem;
         }
 
         .client_id {
-            font-size: 1.8rem;
+            font-size: 0.8rem;
         }
         .notification{
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
         .client_list-filter_text {
             text-align: center;
@@ -1506,6 +1507,11 @@ header nav{
     .name-laptop {
         display: none;
     }
+    .client_card {
+        max-width: none;
+        min-width: unset;
+        width:100%;
+    }
 }
 @media only screen and (min-width: 426px) {
 
@@ -1582,8 +1588,12 @@ header nav{
     }
 
     .client_card {
-        max-width: none;
+        max-width: unset;
         min-width: unset;
-        width: 800px;
+        width: 100%;
+    }
+    .card-listClient {
+        width: 90%;
+        max-width: 1000px;
     }
 }
