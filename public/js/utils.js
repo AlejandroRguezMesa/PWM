@@ -1,9 +1,11 @@
 let formShowed = false;
+let hamburgerShowed = false;
 setTimeout(() => {
     form = document.querySelector(".flotante");
     formLogin = document.getElementById("form-login-all");
+    menuHamburguesa = document.querySelector(".menu-container");
 
-    formLogin.onsubmit = (event) => {
+    formLogin  ? formLogin.onsubmit = (event) => {
         event.preventDefault();
 
         let [user, pass] = formLogin.elements;
@@ -20,7 +22,7 @@ setTimeout(() => {
                 }
             })
         });
-    }
+    } : null;
     form.classList.add("oculto");
 
 }, 500);
@@ -43,6 +45,16 @@ function showLogin(event){
         console.log(obj);
     }).catch((e) => console.log(e));*/
 
+}
+
+function showMenu(e){
+    if (hamburgerShowed){
+        menuHamburguesa.classList.remove("showed")
+        hamburgerShowed = false;
+    } else {
+        menuHamburguesa.classList.add("showed")
+        hamburgerShowed = true;
+    }
 }
 
 async function loadJsonData(fileUrl){
