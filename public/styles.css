@@ -784,7 +784,7 @@ header nav{
     align-items: center;
     box-shadow: -3px 3px 7px #0000006b;
     flex-direction: column;
-
+    z-index: 1;
     &.showed{
         right: 10px;
     }
@@ -1125,6 +1125,45 @@ header nav{
         margin-right: 5px;
     }
 }
+
+.link-responsive-container{
+    display: none;
+
+    .menu-container{
+        position: absolute;
+        background: #ffffff;
+        width: 250px;
+        right: 10px;
+        flex-direction: column;
+        top: 110px;
+        display: none;
+        box-shadow: -3px 3px 7px #0000006b;
+        font-size: 1.4em;
+        z-index: 999;
+        color: white;
+
+        & a{
+            margin: 10px 0;
+            color: #3f6634;
+            text-decoration: underline;
+            padding: 0 5px;
+        }
+
+        &.showed{
+            display: flex;
+        }
+
+        & span{
+            background: #3f6634;
+            padding: 10px 20px;
+
+            & i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
 .main-sobrenosotros{
     padding: 0;
 }
@@ -1365,6 +1404,18 @@ header nav{
                 margin-top: 50px;
                 margin-bottom: 50px;
             }
+        }
+    }
+
+    .link-responsive-container{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex: 1;
+
+        .clasic-button{
+            width: inherit;
+            font-size: unset;
         }
     }
 }
