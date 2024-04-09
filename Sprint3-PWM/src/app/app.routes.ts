@@ -20,7 +20,7 @@ export const routes: Routes = [
   { path: 'nutritional-calendar', component: NutritionistCalendarComponent },
   { path: 'client-calendar', component: ClientCalendarComponent },
   { path: 'client-list', component: ClientListComponent },
-  { path: 'contact', component: ContactoComponent },
+  { path: 'contacto', component: ContactoComponent },
   { path: 'terms', component: TerminosComponent },
   { path: '**', component: HomeComponent },
 

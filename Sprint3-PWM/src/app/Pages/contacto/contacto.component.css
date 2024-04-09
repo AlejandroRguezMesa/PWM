@@ -1,0 +1,36 @@
+
+
+.contacto_header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contacto_header p {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.contacto_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacto_content {
+  flex: 0 0 50%;
+  padding: 20px;
+  text-align: justify;
+}
+
+.contacto_image {
+  flex: 0 0 45%;
+  margin:auto;
+}
+
+.contacto_image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  max-height:950px;
+  margin-bottom: 20px;
+}
