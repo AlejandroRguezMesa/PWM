@@ -13,7 +13,7 @@ import {TerminosComponent} from "./Pages/terminos/terminos.component";
 export const routes: Routes = [
 
   { path: '', component: HomeComponent },
-  { path: 'about-us', component: SobrenosotrosComponent },
+  { path: 'sobre-nosotros', component: SobrenosotrosComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'otros-enlaces', component: OtrosenlacesComponent },
   { path: 'nutrional-list', component: NutritionistListComponent },
