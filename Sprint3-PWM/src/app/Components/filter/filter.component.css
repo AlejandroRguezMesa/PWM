@@ -1,0 +1,21 @@
+.text-filter{
+  margin-bottom: 0px;
+
+}
+.filter-divider{
+
+  margin-top: 0px;
+
+}
+
+.name-filter{
+  text-align: center;
+}
+.name-search-filter input{
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 2px 2px 2px 0px #8080805e;
+  height: 30px;
+  border-radius: 3px;
+  width: 100%;
+}

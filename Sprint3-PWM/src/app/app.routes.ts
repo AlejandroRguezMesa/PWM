@@ -9,14 +9,16 @@ import {NutritionistListComponent} from "./Pages/nutritionist-list/nutritionist-
 import {OtrosenlacesComponent} from "./Pages/otrosenlaces/otrosenlaces.component";
 import {SobrenosotrosComponent} from "./Pages/sobrenosotros/sobrenosotros.component";
 import {TerminosComponent} from "./Pages/terminos/terminos.component";
+import {RegisterComponent} from "./register/register.component";
 
 export const routes: Routes = [
 
   { path: '', component: HomeComponent },
   { path: 'sobre-nosotros', component: SobrenosotrosComponent },
   { path: 'faq', component: FaqComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'otros-enlaces', component: OtrosenlacesComponent },
-  { path: 'nutrional-list', component: NutritionistListComponent },
+  { path: 'nutritionist-list', component: NutritionistListComponent },
   { path: 'nutritional-calendar', component: NutritionistCalendarComponent },
   { path: 'client-calendar', component: ClientCalendarComponent },
   { path: 'client-list', component: ClientListComponent },

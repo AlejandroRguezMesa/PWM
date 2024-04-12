@@ -1,1 +1,25 @@
-<p>client-list works!</p>
+<body>
+<main class="client_list-page">
+  <div class="filter-listClient">
+    <p class="client_list-filter_text">Bienvenido de nuevo, Nutricionista</p>
+    <div id="mySidepanel" class="sidepanel">
+      <div class="combine-filter-client">
+        <app-filter></app-filter>
+        <app-filterclient></app-filterclient>
+      </div>
+    </div>
+    <button class="openbtn" id="filter-hamburger" onclick="openNav()">&#9776; Filtros</button>
+  </div>
+
+
+  <div class="card-container">
+    <p class="client_list-text">Lista de clientes</p>
+    <div id="dummy-Client" class="card-listClient ocultado">
+      <app-clientcard></app-clientcard>
+    </div>
+
+
+  </div>
+</main>
+
+</body>
