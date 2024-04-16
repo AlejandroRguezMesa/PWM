@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f9dde970-b8be-446b-b7d9-41d8af1ceb65" name="Changes" comment="Testing" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlejandroRguezMesa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2b285217-52db-426c-9f8d-cf768c48dc7f" />
+        <option name="url" value="https://github.com/AlejandroRguezMesa/PWM.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2du56uNOLRGDJ97gQShfUfy1srZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.nutritionist_calendar.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Sprint3",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Adriana Rodríguez/Desktop/Alejandro UNI/PWM-Sprints/Sprint3-PWM/src/app/Components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Adriana Rodríguez\\Desktop\\Alejandro UNI\\PWM-Sprints\\Sprint3-PWM\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adriana Rodríguez\Desktop\Alejandro UNI\PWM-Sprints\Sprint3-PWM\src\app\Components" />
+      <recent name="C:\Users\Adriana Rodríguez\Desktop\Alejandro UNI\PWM-Sprints\Sprint3-PWM\src\app\Pages" />
+      <recent name="C:\Users\Adriana Rodríguez\Desktop\Alejandro UNI\PWM-Sprints\Sprint3-PWM\src\app" />
+      <recent name="C:\Users\Adriana Rodríguez\Desktop\Alejandro UNI\PWM-Sprints\Sprint3-PWM\src\assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9dde970-b8be-446b-b7d9-41d8af1ceb65" name="Changes" comment="" />
+      <created>1710844951656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710844951656</updated>
+      <workItem from="1710844952745" duration="6418000" />
+      <workItem from="1711021210445" duration="390000" />
+      <workItem from="1711188396119" duration="7608000" />
+      <workItem from="1711196710551" duration="20954000" />
+      <workItem from="1711283170796" duration="13955000" />
+      <workItem from="1711301063409" duration="4974000" />
+      <workItem from="1711462648087" duration="17960000" />
+      <workItem from="1711501153315" duration="1007000" />
+      <workItem from="1711629465109" duration="704000" />
+      <workItem from="1711675323171" duration="2440000" />
+      <workItem from="1711714153409" duration="5668000" />
+      <workItem from="1711723749764" duration="1082000" />
+      <workItem from="1711797464916" duration="976000" />
+      <workItem from="1711804072981" duration="2008000" />
+      <workItem from="1712044672937" duration="25000" />
+      <workItem from="1712045890167" duration="601000" />
+      <workItem from="1712050604172" duration="2318000" />
+      <workItem from="1712059157992" duration="51000" />
+      <workItem from="1712228194719" duration="1206000" />
+      <workItem from="1712230795201" duration="128000" />
+      <workItem from="1712311241840" duration="2206000" />
+      <workItem from="1712313570950" duration="682000" />
+      <workItem from="1712337142119" duration="41000" />
+      <workItem from="1712580595635" duration="1236000" />
+      <workItem from="1712588304606" duration="2800000" />
+      <workItem from="1712591836053" duration="1879000" />
+      <workItem from="1712655310740" duration="1292000" />
+      <workItem from="1712656696408" duration="5483000" />
+      <workItem from="1712662739204" duration="95000" />
+      <workItem from="1712914776525" duration="1941000" />
+      <workItem from="1712917942141" duration="3932000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added responsive design to sobrenosotros">
+      <option name="closed" value="true" />
+      <created>1711196419772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711196419773</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Testing">
+      <option name="closed" value="true" />
+      <created>1712312581598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712312581598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added responsive design to sobrenosotros" />
+    <MESSAGE value="Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing" />
+  </component>
+</project>
