@@ -10,7 +10,15 @@
     <a href="/sobre-nosotros">Sobre nosotros</a>
     <a href="/nutritionist-list">Nuestros profesionales</a>
     <a href="/faq">Preguntas frecuentes</a>
-    <button onclick=showLogin()>Login</button>
+    <a *ngIf="!authService.currentUserSig()" class="cta">
+    <button >Login</button>
+    </a>
+    <a *ngIf="authService.currentUserSig()" class="cta">
+      <img class="sidebar_profile_image" src="/assets/resources/perfil.png">
+      <p><a class="sidebar-link">{{ authService.currentUserSig()?.username }}</a></p>
+      <p><a class="sidebar-link">{{ authService.currentUserSig()?.subname }}</a></p>
+
+    </a>
   </div>
 
 </nav>

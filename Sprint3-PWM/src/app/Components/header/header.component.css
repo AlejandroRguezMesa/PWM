@@ -62,7 +62,16 @@ header nav{
     }
   }
 }
-
+.sidebar_profile_image{
+  margin-top:20px;
+  margin-bottom: 20px;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+.sidebar_profile_image img{
+  text-align: center;
+}
 
 .index-page main{
   flex: 1;

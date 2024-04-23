@@ -1,0 +1,92 @@
+.register-page{
+  padding: 2px;
+  display: flex;
+
+
+  .form-register-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    & h2{
+      font-style: normal;
+      color: #3f6634;
+    }
+
+    & form{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      & label{
+        margin-bottom: 5px;
+      }
+
+      & input{
+        margin-bottom: 10px;
+        border: none;
+        box-shadow: 2px 2px 2px 0px #8080805e;
+        height: 30px;
+        border-radius: 3px;
+      }
+
+      & textarea{
+        margin-bottom: 10px;
+        border: none;
+        box-shadow: 2px 2px 2px 0px #8080805e;
+        height: 80px;
+        resize: none;
+        border-radius: 3px;
+      }
+
+      .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .clasic-button{
+          margin: 10px 0;
+        }
+      }
+
+
+    }
+
+    .dual-option{
+      display: flex;
+      /* padding: 10px; */
+      background: white;
+      width: fit-content;
+      border-radius: 10px;
+
+      & span{
+        padding: 10px;
+        border-radius: 10px;
+        min-width: 100px;
+        text-align: center;
+        color: #3f6634;
+        cursor: pointer;
+
+        &.selected{
+          background: #3f6634;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .image-register{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdf7d3;
+
+    & img{
+      width: 100%;
+    }
+  }
+
+}

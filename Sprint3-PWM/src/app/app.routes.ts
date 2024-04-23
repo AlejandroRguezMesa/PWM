@@ -9,7 +9,7 @@ import {NutritionistListComponent} from "./Pages/nutritionist-list/nutritionist-
 import {OtrosenlacesComponent} from "./Pages/otrosenlaces/otrosenlaces.component";
 import {SobrenosotrosComponent} from "./Pages/sobrenosotros/sobrenosotros.component";
 import {TerminosComponent} from "./Pages/terminos/terminos.component";
-import {RegisterComponent} from "./register/register.component";
+import {RegisterComponent} from "./Pages/register/register.component";
 
 export const routes: Routes = [
 
