@@ -22,6 +22,7 @@ export class AppComponent {
         this.authService.currentUserSig.set({
           email: user.email!,
           username: user.displayName!,
+          uid: user.uid!,
         });
       } else {
         this.authService.currentUserSig.set(null);

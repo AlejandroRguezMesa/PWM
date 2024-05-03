@@ -6,6 +6,7 @@ import { provideClientHydration } from '@angular/platform-browser';
 import {provideHttpClient} from "@angular/common/http";
 import {getAuth, provideAuth} from "@angular/fire/auth";
 import {initializeApp, provideFirebaseApp} from "@angular/fire/app";
+import {getFirestore, provideFirestore} from "@angular/fire/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyA70roiSmIzGiK1DkLqHVgCNJspbNJbAB0",
   authDomain: "empresa-pwm.firebaseapp.com",
@@ -16,11 +17,9 @@ const firebaseConfig = {
   appId: "1:622964493216:web:6addbbcabcbf20820f32c5"
 };
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes),
-    provideHttpClient(),
-    importProvidersFrom([provideFirebaseApp(() => initializeApp(firebaseConfig)),
-      provideAuth(() => getAuth()),
-    ]),
-  ],
+  providers: [provideRouter(routes),provideHttpClient(),
+    importProvidersFrom(provideFirebaseApp(() => initializeApp(firebaseConfig
+    )), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())),
+  ]
 
 };

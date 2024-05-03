@@ -3,25 +3,25 @@
   <div class="form-register-container">
     <h2>Registro</h2>
     <div class="dual-option">
-      <span class="selected">Cliente</span>
-      <span>Nutricionista</span>
+      <span [class.selected]="rol === 'users'" (click)="cliente()">Cliente</span>
+      <span [class.selected]="rol === 'nutritionist'" (click)="nutricionista()">Nutricionista</span>
     </div>
 
     <form id="register-form" [formGroup]="form" (ngSubmit)="onSubmit()">
       <label>E-mail</label>
-      <input type="text" placeholder="" formControlName="email" />
+      <input type="text" placeholder="" formControlName="email" #EmailInput />
       <label>Contraseña</label>
       <input type="password" placeholder="" formControlName="password" />
       <label>Nombre</label>
-        <input type="text" placeholder="" formControlName="username" />
-      <label>Apellidos</label>
-        <input type="text" placeholder="Apellidos" formControlName="subname" />
-      <label>Fecha de nacimiento</label>
-        <input type="date" placeholder="" formControlName="birth" />
-      <label>Alergias, intoleracncias, patologias</label>
-      <textarea type="text" placeholder="Separado por comas" formControlName="alergia" ></textarea>
-      <label>Preferencias alimenticias</label>
-      <textarea type="text" placeholder="Separado por comas" formControlName="preferencia" ></textarea>
+      <input type="text" placeholder="" formControlName="username" #UsernameInput/>
+        <label class="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" #apellidoInput>
+        <label class="historial_medico">Alergias, intolerancias, patologias:</label>
+        <input type="text" id="historial_medico" name="historial_medico" #historialInput >
+        <label class="preferencias">Preferencias alimenticias:</label>
+        <input type="tel" id="preferencias" name="preferencias" #preferenciasInput>
+
+
       <div class="button-container">
         <button class="clasic-button" type="submit">Register</button>
         <span class="regular-link">Si ya estás registrado, inicia sesion</span>

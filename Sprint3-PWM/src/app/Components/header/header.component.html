@@ -16,8 +16,7 @@
     <a *ngIf="authService.currentUserSig()" class="cta">
       <img class="sidebar_profile_image" src="/assets/resources/perfil.png">
       <p><a class="sidebar-link">{{ authService.currentUserSig()?.username }}</a></p>
-      <p><a class="sidebar-link">{{ authService.currentUserSig()?.subname }}</a></p>
-
+      <p><a class="sidebar-link" (click)="logout()">Cerrar Sesión</a></p>
     </a>
   </div>
 
