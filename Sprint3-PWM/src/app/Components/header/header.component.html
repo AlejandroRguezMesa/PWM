@@ -11,7 +11,7 @@
     <a href="/nutritionist-list">Nuestros profesionales</a>
     <a href="/faq">Preguntas frecuentes</a>
     <a *ngIf="!authService.currentUserSig()" class="cta">
-    <button >Login</button>
+    <button (click)="toggleLogin()">Login</button>
     </a>
     <a *ngIf="authService.currentUserSig()" class="cta">
       <img class="sidebar_profile_image" src="/assets/resources/perfil.png">

@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9dde970-b8be-446b-b7d9-41d8af1ceb65" name="Changes" comment="Testing">
-      <change afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/user.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/header/header.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/register/register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/Pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint3-PWM/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3-PWM/src/app/login/login.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +61,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Users\\Adriana Rodríguez\\Desktop\\Alejandro UNI\\PWM-Sprints\\Sprint3-PWM\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\Adonai\\Desktop\\PWM\\Sprint3-PWM\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -123,6 +115,8 @@
       <workItem from="1712662739204" duration="95000" />
       <workItem from="1712914776525" duration="1941000" />
       <workItem from="1712917942141" duration="3932000" />
+      <workItem from="1714905362706" duration="422000" />
+      <workItem from="1714906469518" duration="3856000" />
     </task>
     <task id="LOCAL-00001" summary="Added responsive design to sobrenosotros">
       <option name="closed" value="true" />
